@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+int a;
+clrscr();
+printf("digite o valor de a\n");
+scanf("%d",&a);
+if(a%2)
+{
+printf("este numero e impar");
+}
+else
+if(a/2)
+{
+printf("este numero e par");
+}
+getch();
+}

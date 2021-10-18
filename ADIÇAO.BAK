@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main ()
+{
+float a,b,c;
+clrscr ();
+printf("programa de adi‡ao\n");
+printf("digite os valores de a e b\n");
+scanf("%f %f",&a, &b,&c);
+c=(a+b);
+printf("c=%.2f\n",c);
+getch ();
+}
