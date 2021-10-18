@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+inicio:
+int m;
+float a,b,c,x1,x2,d;
+clrscr ();
+printf("programa de bascara\n");
+printf("digite os valores de abc\n");
+scanf("%f %f %f",&a,&b,&c);
+d=(b*b)-(4*a*c);
+x1=(-b+sqrt(d))/(2*a);
+x2=(-b-sqrt(d))/(2*a);
+printf("delta=%.2f\n",d);
+printf("x1=%.2f e x2=%.2f\n",x1,x2);
+printf("Deseja calcular novamente?\n");
+printf("Se sim, digite:1; Se nao, digite:2\n");
+scanf("%d",&m);
+if(m==1)
+{
+goto inicio;
+}
+else
+if(m==2)
+{
+goto fim;
+}
+getch();
+fim:
+}
