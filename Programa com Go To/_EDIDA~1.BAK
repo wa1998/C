@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+inicio:
+int w;
+float km,hm,dm,m,dc,cm,mm;
+clrscr();
+printf("conversao de medidas\n");
+printf("digite o valor do metro\n");
+scanf("%f",&m);
+km=(m/1000);
+hm=(m/100);
+dm=(m/10);
+dc=(m*10);
+cm=(m*100);
+mm=(m*1000);
+printf(" km=%.4f\n hm=%.2f\n dm=%.2f\n m=%.2f\n dc=%.2f\n cm=%.2f\n mm=%.2f\n",km,hm,dm,m,dc,cm,mm);
+printf("Deseja converter novamente?\n");
+printf("Se sim, digite:1; Se nao, digite:2\n");
+scanf("%d",&w);
+if(w==1)
+{
+goto inicio;
+}
+else
+if(w==2)
+{
+goto fim;
+}
+getch();
+fim:
+}
